@@ -1,6 +1,6 @@
 # Vite + React + Zustand Starter
 
-A simple boilerplate for Vite with React and Zustand. This is the boilerplate I use for my personal projects. If you have any suggestions on how to improve it, open a [Github Pull Request](https://github.com/AaronClaes/ViteReactStarter/pulls) or [GithubIssue](https://github.com/AaronClaes/ViteReactStarter/issues).
+A simple boilerplate for Vite with React and Zustand. This is the boilerplate I use for my personal projects. If you have any suggestions on how to improve it, open a [Github Pull Request](https://github.com/AaronClaes/ViteReactStarter/pulls) or [Github Issue](https://github.com/AaronClaes/ViteReactStarter/issues).
 
 ## Features
 
@@ -11,6 +11,10 @@ A simple boilerplate for Vite with React and Zustand. This is the boilerplate I 
 - [React router dom v6](https://reactrouter.com/en/main) basic setup
 - Dynamic imports support
 - Opinionated folder structure
+
+## TODO
+
+- Improve starter example
 
 ## Get Started
 
@@ -168,4 +172,4 @@ This folder is for JSON or other data files that need to be imported into the ap
 
 ## Contribution
 
-Suggestions? Open open a [Github Pull Request](https://github.com/AaronClaes/ViteReactStarter/pulls) or [GithubIssue](https://github.com/AaronClaes/ViteReactStarter/issues) and let me know what I should change!
+Suggestions? Open open a [Github Pull Request](https://github.com/AaronClaes/ViteReactStarter/pulls) or [Github Issue](https://github.com/AaronClaes/ViteReactStarter/issues) and let me know what I should change!
