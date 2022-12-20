@@ -1,6 +1,6 @@
 # Vite + React + Zustand Starter
 
-A simple boilerplate for Vite with React and Zustand. This is the boilerplate I use for my personal projects. If you have any suggestions on how to improve it, open a PR or Issue.
+A simple boilerplate for Vite with React and Zustand. This is the boilerplate I use for my personal projects. If you have any suggestions on how to improve it, open a [Github Pull Request](https://github.com/AaronClaes/ViteReactStarter/pulls) or [GithubIssue](https://github.com/AaronClaes/ViteReactStarter/issues).
 
 ## Features
 
@@ -38,15 +38,15 @@ npm run dev
 
 ```json
 "paths": {
-      "@/components/*": ["src/components/*"], // Basic components used across the app
-      "@/assets/*": ["src/assets/*"], // Assets like images and svgs
-      "@/features/*": ["src/features/*"], // Big parts of the application used in single or multiple pages
-      "@/hooks/*": ["src/hooks/*"], // Custom hooks used across multiple pages
-      "@/lib/*": ["src/lib/*"], // JavaScript classes or other handlers used across the app
-      "@/pages/*": ["src/pages/*"], // All the pages in the app
-      "@/services/*": ["src/services/*"], // Functions and helpers used across the app
-      "@/store/*": ["src/store/*"], // One or more Zustand store files
-      "@/data/*": ["src/data/*"], // JSON or other data files
+      "@/components/*": ["src/components/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/features/*": ["src/features/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/services/*": ["src/services/*"],
+      "@/store/*": ["src/store/*"],
+      "@/data/*": ["src/data/*"],
     }
 ```
 
@@ -67,7 +67,7 @@ This folder might be a less common way to structure your project, but it is real
 Using this method makes sure your page files and folders stay readable and manageable like in the example below.
 
 ```js
-# pages/Group/index.jsx
+// pages/Group/index.jsx
 
 import @/features/Group/GroupChat
 import @/features/Group/GroupMemberList
@@ -168,4 +168,4 @@ This folder is for JSON or other data files that need to be imported into the ap
 
 ## Contribution
 
-Suggestions? Open a PR or Issue and let me know what I should change!
+Suggestions? Open open a [Github Pull Request](https://github.com/AaronClaes/ViteReactStarter/pulls) or [GithubIssue](https://github.com/AaronClaes/ViteReactStarter/issues) and let me know what I should change!
