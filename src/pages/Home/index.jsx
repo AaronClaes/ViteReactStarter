@@ -1,9 +1,7 @@
-import ThemeToggle from "@/features/ThemeToggle";
-
 const Home = () => {
   return (
     <>
-      <ThemeToggle />
+      <h1>Home</h1>
     </>
   );
 };

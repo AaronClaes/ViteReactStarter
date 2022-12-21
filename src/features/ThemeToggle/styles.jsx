@@ -2,16 +2,18 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-self: center;
-
-  padding: 1rem;
+  justify-content: ${({ active }) => (active ? "flex-start" : "flex-end")};
+  width: 60px;
+  padding: 6px;
   background-color: ${({ theme }) => theme.cardBackground};
-  border-radius: ${({ theme }) => theme.values.borderRadius};
+  border-radius: 30px;
+  cursor: pointer;
 
-  .toggle_card-title {
-    color: ${({ theme }) => theme.text};
-    margin-bottom: 1rem;
+  .dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: ${({ theme }) => theme.text};
   }
 `;

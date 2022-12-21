@@ -8,7 +8,8 @@ const mainProperties = {
     secondary: "#1595e5",
     danger: "#ff3131",
     success: "#50fa1c",
-    white: "#efefef"
+    white: "#efefef",
+    gray: "#d2d2d2"
   },
   values: {
     borderRadius: "15px"

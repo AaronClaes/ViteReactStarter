@@ -1,19 +1,11 @@
-import Button from "@/components/Button";
-import { useStore } from "@/store/index";
+import useTheme from "@/hooks/useTheme";
 import { Wrapper } from "./styles";
 
 const ThemeToggle = () => {
-  const updateObject = useStore((state) => state.updateObject);
-  const darkTheme = useStore((state) => state.app.darkTheme);
-
-  const handleToggleTheme = () => {
-    updateObject("app", ["darkTheme"], [!darkTheme]);
-  };
-
+  const { darkTheme, toggle } = useTheme();
   return (
-    <Wrapper>
-      <h3 className="toggle_card-title">Toggle Theme</h3>
-      <Button onClick={handleToggleTheme}>Switch</Button>
+    <Wrapper active={darkTheme} onClick={toggle}>
+      <div className="dot" />
     </Wrapper>
   );
 };

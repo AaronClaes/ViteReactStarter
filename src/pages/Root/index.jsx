@@ -1,12 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Navigation from "../Navigation";
 import { Wrapper } from "./styles";
+import Navigation from "@/features/Navigation";
 
 const Root = () => {
   return (
     <Wrapper>
       <Navigation />
-
       <Outlet />
     </Wrapper>
   );
