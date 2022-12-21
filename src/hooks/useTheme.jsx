@@ -1,6 +1,6 @@
 import { useStore } from "../store";
 
-// Example, remove this file
+// custom hook to access the current theme and toggle function
 const useTheme = () => {
   const updateObject = useStore((state) => state.updateObject);
   const darkTheme = useStore((state) => state.app.darkTheme);

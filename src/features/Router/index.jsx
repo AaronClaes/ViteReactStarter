@@ -2,11 +2,12 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
-import Root from "../../pages/Root";
+import Root from "@/pages/Root";
 
 const Router = () => {
   const router = createBrowserRouter([
     {
+      // root element to define cross route components
       path: "/",
       element: <Root />,
       children: [

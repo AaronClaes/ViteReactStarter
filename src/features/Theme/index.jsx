@@ -1,4 +1,4 @@
-import { useStore } from "@/store/index";
+import useTheme from "@/hooks/useTheme";
 import { ThemeProvider } from "styled-components";
 import Global from "./components/Global";
 
@@ -16,7 +16,7 @@ const mainProperties = {
   }
 };
 
-const darkTheme = {
+const dark = {
   theme: "dark",
   ...mainProperties,
   background: "#2e2e37",
@@ -24,7 +24,7 @@ const darkTheme = {
   text: "#f4f4f4"
 };
 
-const lightTheme = {
+const light = {
   theme: "light",
   ...mainProperties,
   background: "#f4f4f4",
@@ -33,10 +33,11 @@ const lightTheme = {
 };
 
 const Theme = ({ children }) => {
-  const isDarkTheme = useStore((state) => state.app.darkTheme);
+  const { darkTheme } = useTheme();
 
   return (
-    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkTheme ? dark : light}>
+      {/* gobal css */}
       <Global />
       {children}
     </ThemeProvider>

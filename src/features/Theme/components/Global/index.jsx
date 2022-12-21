@@ -4,6 +4,7 @@ const Global = () => {
   return <GlobalStyleComponent />;
 };
 
+// define global styling inside this styled-components function
 const GlobalStyleComponent = createGlobalStyle`
     * {
     margin: 0;
