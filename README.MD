@@ -14,7 +14,7 @@ A simple boilerplate for Vite with React and Zustand. This is the boilerplate I 
 
 ## TODO
 
-- Improve starter example
+- Document code
 
 ## Get Started
 
