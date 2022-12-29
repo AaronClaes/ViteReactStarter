@@ -12,14 +12,10 @@ export const useStore = create((set) => ({
   ...inititalState,
 
   // function to update the different objects and fields inside the state
-  updateObject: (object, items, values) =>
-    set((state) => {
-      for (const [index, item] of items.entries()) {
-        const value = values[index];
-        state[object][item] = value;
-      }
-      return { ...state };
-    })
+  updateObject: (object, options) =>
+    set((state) => ({
+      [object]: { ...state[object], ...options }
+    }))
 }));
 
 // download the react devtools extension to view debug your store

@@ -6,7 +6,7 @@ const useTheme = () => {
   const darkTheme = useStore((state) => state.app.darkTheme);
 
   const toggle = () => {
-    updateObject("app", ["darkTheme"], [!darkTheme]);
+    updateObject("app", { darkTheme: !darkTheme });
   };
 
   return { darkTheme, toggle };
